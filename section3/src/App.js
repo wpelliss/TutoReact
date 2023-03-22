@@ -1,16 +1,15 @@
-import Item from './Item'
 import {useState} from 'react'
 
 function App() {
 
   const [monState, setMonState] = useState(10);
-  console.log(monState);
+  
+  const modifyState = () => setMonState(monState + 1);
 
   return (
     <div className="App">
-      <h1>Hello app react</h1>
-      <Item />
-      {monState}
+      <h1>Test de modification d'un state : {monState}</h1>
+      <button onClick={modifyState}>Changer le state</button>
     </div>
   );
 }
