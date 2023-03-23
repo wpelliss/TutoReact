@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Test de modification d'un state : <Item number={monState}/></h1>
-      <button onClick={incrementState}>Changer le state</button>
+      <h1>Test de modification d'un state : {monState}</h1>
+      <Item func={incrementState}/>
     </div>
   );
 }

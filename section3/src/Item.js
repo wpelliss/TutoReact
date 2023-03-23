@@ -1,7 +1,8 @@
 function Item(props)
 {
-    console.log(props);
-    return props.number;
+    return (
+        <button onClick={props.func}>Changer le state</button>
+    );
 }
 
 export default Item;
